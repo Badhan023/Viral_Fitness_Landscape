@@ -17,6 +17,6 @@ mutation_rate = the mutation rate of the infecting virus
 
 duration = the infection duration of an infection in the body of a host
 
-infection_probability = the probability of an uninfected host to be infected
+infection_probability = the probability of an uninfected host being infected
 
 **Output** : the average adaptive walk length of 100 walks
