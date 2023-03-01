@@ -19,9 +19,16 @@ print (sys.argv[2])                         #initial number of nodes
 print ("Mutation rate:")
 print (sys.argv[3])
 
+print ("Duration:")
+print (sys.argv[4])
+
+print ("Infection probability:")
+print (sys.argv[5])
+
 mutation_rate = float(sys.argv[3])
 total_itererations = 5000
-standard_timer = 5
+standard_timer = int(sys.argv[4])
+infection_probability = float(sys.argv[5])
 
 #all possible states generation
 arr = [None]*int(sys.argv[1])
@@ -361,7 +368,7 @@ def Infection_Propagation(G, H):
         
         
         #PHASE 2: INFECTION DECISION
-        infection_list = Infection_Decision(G, H)
+        infection_list = Infection_Decision(G, H, infection_probability)
         logger.info("new infected hosts and respective strains : " + str(infection_list))
     
         #PHASE 3: INFECTION AND DISINFECTION
@@ -582,6 +589,3 @@ for i in range(100):
     total_walklength=total_walklength+walk_length
 avg_walk = total_walklength/100
 print("average walk : " + str(avg_walk))
-
-
-
