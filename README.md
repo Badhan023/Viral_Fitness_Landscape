@@ -7,7 +7,7 @@ The [waxman_model.py](waxman_model.py) is the network model and the [hypercube_g
 
 ## Running the Simulation
 ```hs
-python3 waxman_model.py sequence_length network_size mutation_rate duration infection_probability
+python3 waxman_model.py <sequence_length> <network_size> <mutation_rate> <duration> <infection_probability> <sequence_type> 
 ```
 Here, sequence_length = length of the viral genome sequence
 
@@ -18,5 +18,7 @@ mutation_rate = the mutation rate of the infecting virus
 duration = the infection duration of an infection in the body of a host
 
 infection_probability = the probability of an uninfected host being infected
+
+sequence_type = bin / nucl
 
 **Output** : the average adaptive walk length of 100 walks
