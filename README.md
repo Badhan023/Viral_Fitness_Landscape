@@ -38,5 +38,3 @@ duration = the infection duration of an infection in the body of a host
 infection_probability = the probability of an uninfected host being infected
 
 sequence_type = bin / nucl
-
-**Output** : the average adaptive walk length of 100 walks
